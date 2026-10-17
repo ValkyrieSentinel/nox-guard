@@ -1,0 +1,6 @@
+[workspace]
+members = [
+    "nox-orchestrator",
+    "nox-guard-common",
+]
+resolver = "2"

@@ -1,0 +1,18 @@
+[package]
+name = "nox-ebpf"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nox-guard-common = { path = "../../nox-guard-common" }
+aya-ebpf = { git = "https://github.com/aya-rs/aya", branch = "main" }
+
+[lib]
+crate-type = ["cdylib"]
+
+[profile.release]
+opt-level = 3
+debug = true
+strip = "debuginfo"
+
+[workspace]
