@@ -1,5 +1,5 @@
-# Rust
-/target/
+# Rust (всі target папки)
+**/target/
 **/*.rs.bk
 Cargo.lock
 
